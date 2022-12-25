@@ -202,8 +202,11 @@ ol {
   opacity: 1;
 }
 /* ________КОНТАКТИ________*/
+/* .contact {
+  display: flex;
+} */
 
-.contacts .contact__link {
+.contact .contact__link {
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -218,30 +221,30 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-contact {
+.contact__icon {
   margin-right: 10px;
   fill: currentColor;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts .contact__link:hover {
+.contact .contact__link:hover {
   color: var(--accent-text-color);
 }
-.contact__link:hover .icon-contact {
+.contact__link:hover .contact__icon {
   fill: var(--accent-text-color);
 }
-.contacts {
+.contact {
   display: flex;
   align-items: center;
 }
 
-.contacts__item {
+.contact__item {
   padding: 32px 0;
   margin-right: 50px;
 }
 
-.contacts__item:last-child {
+.contact__item:last-child {
   margin-right: 0px;
 }
 
@@ -554,10 +557,6 @@ ol {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
-}
-.contact {
-  display: block;
-  margin-bottom: 12px;
 }
 
 .contact:last-child {
