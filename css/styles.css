@@ -559,6 +559,9 @@ ol {
   color: var(--third-text-color);
 }
 
+.contact {
+  margin-bottom: 9px;
+}
 .contact:last-child {
   margin-bottom: 0;
 }
