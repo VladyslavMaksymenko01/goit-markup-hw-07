@@ -9,17 +9,20 @@
 
     <link
       href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Нормалізатор -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
     <!-- Стилі CSS -->
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/main.min.css" /> -->
   </head>
   <body>
     <!-- Шапка -->
@@ -28,36 +31,39 @@
       <!-- Навигація -->
 
       <div class="container">
-        <div class="nav-contact">
-          <nav class="site-nav">
+        <div class="navigation-contact">
+          <nav class="navigation">
             <a href="./index.html" class="logo">
-              <span class="logo-accent">Web</span>Studio
+              <span class="logo__accent">Web</span>Studio
             </a>
-            <ul class="nav-links list">
-              <li class="navi-links">
-                <a href="./index.html" class="links current">Студія</a>
+
+            <ul class="navigation-list list">
+              <li class="navigation__item">
+                <a href="./index.html" class="navigation__link current"
+                  >Студія</a
+                >
               </li>
-              <li class="navi-links">
-                <a href="portfolio.html" class="links">Портфоліо</a>
+              <li class="navigation__item">
+                <a href="portfolio.html" class="navigation__link">Портфоліо</a>
               </li>
-              <li class="navi-links">
-                <a href="./index.html" class="links">Контакти</a>
+              <li class="navigation__item">
+                <a href="./index.html" class="navigation__link">Контакти</a>
               </li>
             </ul>
           </nav>
 
           <!-- Контакти -->
           <ul class="contacts list">
-            <li class="contacts-items">
-              <a href="mailto:info@devstudio.com" class="contact-links list">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contact__link list">
                 <svg class="icon-contact" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
-            <li class="contacts-items">
-              <a href="tel:+380961111111" class="contact-links list">
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contact__link list">
                 <svg class="icon-contact" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
@@ -154,7 +160,8 @@
                 <img
                   src="./images/box1.jpg"
                   alt="Зображення процесу програмування"
-                  width="370" />
+                  width="370"
+                />
                 <p class="overlay-text">Десктопні додатки</p>
               </div>
             </li>
@@ -163,7 +170,8 @@
                 <img
                   src="./images/box2.jpg"
                   alt="Зображення процесу дизайну блоків"
-                  width="370" />
+                  width="370"
+                />
                 <p class="overlay-text">Мобільні додатки</p>
               </div>
             </li>
@@ -172,7 +180,8 @@
                 <img
                   src="./images/box3.jpg"
                   alt="Зображення процесу вибору кольору"
-                  width="370" />
+                  width="370"
+                />
                 <div class="overlay-text">
                   <p>Дизайнерські рішення</p>
                 </div>
@@ -190,7 +199,8 @@
               <img
                 src="./images/img1.jpg"
                 alt="Дизайнер продукта"
-                width="270" />
+                width="270"
+              />
               <div class="text">
                 <h3 class="team-name">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-position">Product Designer</p>
@@ -231,7 +241,8 @@
               <img
                 src="./images/img2.jpg"
                 alt="Фронтенд розробник"
-                width="270" />
+                width="270"
+              />
               <div class="text">
                 <h3 class="team-name">Ольга Рєпіна</h3>
                 <p lang="en" class="team-position">Frontend Developer</p>
@@ -308,7 +319,8 @@
               <img
                 src="./images/img4.jpg"
                 alt="Дизайнер інтерфейсу користувача"
-                width="270" />
+                width="270"
+              />
               <div class="text">
                 <h3 class="team-name">Михайло Єрмаков</h3>
                 <p lang="en" class="team-position">UI Designer</p>
@@ -412,12 +424,12 @@
                 >
               </li>
               <li class="contact">
-                <a href="mailto:info@devstudio.com" class="contact-links"
+                <a href="mailto:info@devstudio.com" class="contact__link"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="contact">
-                <a href="tel:+380961111111" class="contact-links"
+                <a href="tel:+380961111111" class="contact__link"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -467,7 +479,8 @@
                   class="form-input"
                   type="email"
                   id="email"
-                  placeholder="Email" />
+                  placeholder="Email"
+                />
                 <button type="submit" class="subscribe-btn">
                   Підписатися
                   <svg width="24" height="24" class="icon-send">
@@ -527,7 +540,8 @@
             <textarea
               name="comment"
               id="comment"
-              placeholder="Введіть текст"></textarea>
+              placeholder="Введіть текст"
+            ></textarea>
           </div>
           <div class="policy">
             <input
@@ -535,7 +549,8 @@
               type="checkbox"
               name="policy"
               value="policy"
-              id="policy" />
+              id="policy"
+            />
             <label class="policy-label" for="policy">
               Погоджуюся з розсилкою та приймаю
               <a class="policy-link" href="#">Умови договору</a></label
