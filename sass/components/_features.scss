@@ -5,9 +5,9 @@
 .features__item {
   margin-right: 30px;
   width: 270px;
-}
-.features__item:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .icon {

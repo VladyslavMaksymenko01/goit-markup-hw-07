@@ -7,10 +7,9 @@
 .customer__item {
   width: 170px;
   height: 92px;
-}
-
-.customer__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .customer__link {
@@ -24,15 +23,14 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customer__link:hover .customer__icons,
-.customer__link:focus .customer__icons {
-  fill: var(--accent-text-color);
-}
-.customer__link:hover,
-.customer__link:focus {
-  border-color: var(--accent-text-color);
+  &:hover .customer__icons,
+  &:focus .customer__icons {
+    fill: var(--accent-text-color);
+  }
+  &:hover,
+  &:focus {
+    border-color: var(--accent-text-color);
+  }
 }
 
 .customer__icons {

@@ -47,14 +47,15 @@
   border-radius: 50%;
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus .svg-close,
+  &:hover .svg-close {
+    fill: var(--accent-text-color);
+  }
 }
 .svg-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close:focus .svg-close,
-.modal-close:hover .svg-close {
-  fill: var(--accent-text-color);
-}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -101,17 +102,17 @@
   border-radius: 4px;
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    border-color: var(--accent-text-color);
+    outline: transparent;
+  }
+  &:focus + .svg-form,
+  &:hover + .svg-form {
+    fill: var(--accent-text-color);
+  }
 }
 
-.modal-form-input:focus,
-.modal-form-input:hover {
-  border-color: var(--accent-text-color);
-  outline: transparent;
-}
-.modal-form-input:focus + .svg-form,
-.modal-form-input:hover + .svg-form {
-  fill: var(--accent-text-color);
-}
 .svg-form {
   position: absolute;
   top: 50%;
@@ -135,12 +136,13 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    border-color: var(--accent-text-color);
+    outline: transparent;
+  }
 }
-textarea:focus,
-textarea:hover {
-  border-color: var(--accent-text-color);
-  outline: transparent;
-}
+
 .policy {
   display: flex;
   justify-content: center;
@@ -159,15 +161,15 @@ textarea:hover {
 .policy-label {
   display: flex;
   align-items: center;
-}
-.policy-label::before {
-  content: "";
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-  border: 2px solid;
-  border-color: black;
-  border-radius: 2px;
+  &::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 2px;
+  }
 }
 
 label a {
@@ -204,8 +206,8 @@ label a {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-send-btn:hover,
-.modal-send-btn:focus {
-  background-color: var(--btn-hover);
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover);
+  }
 }
