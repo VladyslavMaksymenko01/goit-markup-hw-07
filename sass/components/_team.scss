@@ -20,17 +20,12 @@
 
 .team__name {
   margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
+  @include font500(500, 16, 19, 0.03);
 }
 
 .team__position {
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
   margin-bottom: 16px;
+  @include font(400, 16, 19, 0.03);
 
   color: var(--primary-text-color);
 }

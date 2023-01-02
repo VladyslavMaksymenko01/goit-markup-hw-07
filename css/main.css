@@ -98,23 +98,12 @@ body {
   border: 1px solid #ececec;
 }
 
-/*________НАВІГАЦІЯ________*/
-.navigation-contact {
-  display: flex;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-}
-
 .logo {
   text-decoration: none;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.1923076923;
   letter-spacing: 0.03em;
 }
 
@@ -123,13 +112,29 @@ body {
   color: var(--logo);
 }
 
+.logo--light {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--third-text-color);
+}
+
 .logo__accent {
   font-family: "Raleway" sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.1923076923;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
+}
+
+.navigation-contact {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
 .navigation-list {
@@ -146,7 +151,8 @@ body {
 .navigation-list .navigation__link {
   text-decoration: none;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   transition-property: color;
@@ -198,7 +204,6 @@ body {
   opacity: 1;
 }
 
-/* ________КОНТАКТИ________*/
 .contact {
   display: flex;
   align-items: center;
@@ -206,7 +211,8 @@ body {
 .contact .contact__link {
   color: var(--primary-text-color);
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.02em;
 }
 .contact .contact__link:hover {
@@ -261,9 +267,9 @@ body {
   white-space: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  line-height: 1.3636363636;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--third-text-color);
 }
@@ -280,6 +286,7 @@ body {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   border: none;
   cursor: pointer;
@@ -314,14 +321,17 @@ body {
 
 .features-titles {
   margin-bottom: 10px;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .features-text {
-  line-height: 1.71;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -351,9 +361,9 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--third-text-color);
 }
@@ -382,15 +392,16 @@ body {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.1875;
   letter-spacing: 0.03em;
 }
 
 .team__position {
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
   margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
@@ -479,26 +490,11 @@ body {
   background-color: var(--secondary-bg-color);
 }
 
-.logo {
-  text-decoration: none;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.logo--light {
-  display: inline-block;
-  margin-bottom: 20px;
-  color: var(--third-text-color);
-}
-
 .logo-accent {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.1923076923;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
 }
@@ -557,7 +553,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -624,7 +620,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -638,7 +634,7 @@ body {
   min-width: 358px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--secondary-bg-color);
@@ -653,11 +649,11 @@ body {
   width: 200px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
   padding: 10px 28px;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -692,7 +688,7 @@ body {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   border: transparent;
@@ -751,7 +747,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.56;
+  line-height: 1.5555555556;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
   background-color: rgba(33, 150, 243, 0.8980392157);
@@ -769,6 +765,7 @@ body {
 /* items-title */
 .project__title {
   margin-bottom: 4px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -777,8 +774,9 @@ body {
 
 /* items-text */
 .project__text {
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -851,9 +849,9 @@ body {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
-  text-align: center;
+  line-height: 1.15;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
 }
 
@@ -866,7 +864,7 @@ body {
   flex-direction: column;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: #757575;
 }
@@ -961,7 +959,7 @@ label a {
 .policy-link {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
 }
@@ -977,10 +975,11 @@ label a {
   padding: 10px 24px;
   background-color: var(--accent-text-color);
   color: var(--third-text-color);
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
+  line-height: 1.875;
   letter-spacing: 0.06em;
+  font-family: inherit;
   border: none;
   cursor: pointer;
   transition-property: background-color;

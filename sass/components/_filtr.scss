@@ -13,10 +13,7 @@
   border-radius: 4px;
 
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
+  @include font500(500, 16, 26, 0.03);
   color: var(--secondary-text-color);
   border: transparent;
   cursor: pointer;
@@ -72,11 +69,7 @@
   top: 0;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-
+  @include font(400, 18, 28, 0.03);
   color: var(--third-text-color);
   background-color: #2196f3e5;
   transform: translateY(100%);
@@ -94,15 +87,11 @@
 .project__title {
   margin-bottom: 4px;
 
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font700(700, 18, 36, 0.06);
   color: var(--secondary-text-color);
 }
 /* items-text */
 .project__text {
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
+  @include font(400, 16, 30, 0.03);
   color: var(--primary-text-color);
 }
