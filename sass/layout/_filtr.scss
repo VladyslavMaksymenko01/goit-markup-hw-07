@@ -29,6 +29,7 @@
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 // __________LIST OF THE FILTR WEBSITE_______
 .website-list {
   display: flex;
@@ -83,14 +84,13 @@
   padding: 20px 24px;
 }
 
-/* items-title */
 .project__title {
   margin-bottom: 4px;
 
   @include font700(700, 18, 36, 0.06);
   color: var(--secondary-text-color);
 }
-/* items-text */
+
 .project__text {
   @include font(400, 16, 30, 0.03);
   color: var(--primary-text-color);
